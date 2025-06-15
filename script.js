@@ -12,9 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const city = cityInput.value.trim();
     if (!city) return "";
 
-    //it may throw an error
-    //server/database is always in another continent
-
     try {
       const weatherData = await fetchWeatherData(city);
       displayWeatherData(weatherData);
